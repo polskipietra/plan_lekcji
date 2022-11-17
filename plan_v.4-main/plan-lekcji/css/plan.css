@@ -1,0 +1,206 @@
+@media screen and (min-width: 700px) {
+	.grider {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 700px) {
+	table table {
+		display: none;
+	}
+
+	.grider {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	/* .grider div:empty {
+		display: none;
+	} */
+	.grider div {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+	}
+
+	.grider div:nth-child(7n + 1),
+	.grider div:nth-child(7n + 2) {
+		display: none;
+	}
+	.old-th {
+		font-size: 19px;
+	}
+
+	.grider div:nth-child(7n + 1) {
+		order: 1;
+	}
+	.grider div:nth-child(7n + 2) {
+		order: 2;
+	}
+	.grider div:nth-child(7n + 3) {
+		order: 3;
+	}
+	.grider div:nth-child(7n + 4) {
+		order: 4;
+	}
+	.grider div:nth-child(7n + 5) {
+		order: 5;
+	}
+	.grider div:nth-child(7n + 6) {
+		order: 6;
+	}
+	.grider div:nth-child(7n) {
+		order: 7;
+	}
+
+	.grider time {
+		width: 25%;
+	}
+	.grider article {
+		display: flex;
+		width: 75%;
+	}
+	.grider article .n {
+		flex-grow: 0;
+		flex-basis: 20%;
+		text-align: right;
+	}
+	.grider article .s {
+		flex-basis: 0%;
+		flex-grow: 0;
+		text-align: right;
+	}
+	.grider article .p {
+		min-width: 25vw;
+		flex-grow: 0;
+		text-align: center;
+	}
+
+	.grider {
+		font-family: Garamond, sans-serif;
+		font-weight: 500;
+	}
+	.old-th time {
+		display: none;
+	}
+	.old-th article {
+		/*background-color: red;*/
+		padding-top: 20px;
+		display: block;
+		text-align: right;
+		padding-right: 20px;
+		font-size: 1.75rem;
+		line-height: 3rem;
+	}
+	.grider time {
+		font-family: Garamond, sans-serif;
+		color: rgb(0, 0, 0);
+		/* font-style: italic; */
+	}
+	.old-td + .old-td {
+		border-top: 1px solid #ddd;
+		font-size: 1.2rem;
+		line-height: 1.75rem;
+	}
+	article > span {
+		margin-left: 0vw;
+	}
+	a.o {
+		margin-left: 30vw;
+	}
+}
+
+/* some minor tweaks */
+caption {
+	text-align: center;
+	width: 100%;
+}
+form {
+	min-width: 300px;
+	margin: auto;
+	width: 50vw;
+	text-align: center;
+}
+body > div > table {
+	width: 100%;
+}
+body > div > table table {
+	margin: auto;
+}
+
+/* Only as example */
+/* .p-j-angielski, .p-r_angielski {
+    color: #1b9448;
+}
+.p-geografia, .p-r_geografia {
+    color: blueviolet;
+} */
+
+caption {
+	box-sizing: content-box;
+	background-color: #011a29;
+	background-image: url(https://zskocjan.pl/wp-content/uploads/2019/01/zs3_380.png);
+	background-repeat: no-repeat;
+	background-size: 35vw 15vw;
+	width: 100%;
+	height: 20vw;
+	position: relative;
+	top: -29px;
+	left: -8px;
+	color: #fff;
+	border: 8px solid #011a29;
+	z-index: -100000;
+}
+
+select {
+	width: 40vw;
+	position: relative;
+	left: 26vw;
+	top: 20px;
+	border-radius: 5px;
+	background-color: #02263c1a;
+	color: rgb(141, 139, 139);
+}
+
+.n {
+	color: #000;
+	text-decoration: none;
+	text-align: right;
+}
+
+.tabela,
+.l,
+.g,
+.nr,
+th {
+	border-collapse: collapse;
+	border: 0;
+	background-color: rgba(244, 244, 243, 0.937);
+	text-align: center;
+}
+.nr,
+.g,
+.l {
+	border-bottom: 0.5px solid black;
+	padding: 5px 3px;
+}
+.tabela {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.529);
+	min-width: 60vw;
+}
+
+th {
+	font-family: Helvetica, sans-serif;
+	background-color: #011a29;
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px 6px;
+}
+
+/* td:nth-child(n+2){
+    background-color: #ffffff81;
+    /* font-size: 10px; */
