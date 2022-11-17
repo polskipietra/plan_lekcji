@@ -73,7 +73,7 @@
 		text-align: right;
 	}
 	.grider article .p {
-		min-width: 25vw;
+		min-width: 15vw;
 		flex-grow: 0;
 		text-align: center;
 	}
@@ -108,7 +108,7 @@
 		margin-left: 0vw;
 	}
 	a.o {
-		margin-left: 30vw;
+		margin-left: 5vw;
 	}
 }
 
